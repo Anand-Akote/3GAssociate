@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+}
+ .header{
+  /* min-height: 100vh;
+    width:100;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/baneer.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;*/
+}
+.bg-slider {
+    width: 100%;
+    height: 100vh; /* Set the height as needed */
+    background-size: cover;
+    background-position: center;
+    animation: slide 10s infinite; /* 15 seconds animation with infinite loop */
+  }
+  
+  /* Keyframes for the background image slider */
+  @keyframes slide {
+    0% {
+      background-image: url('images/OIP (6).jpeg.jpg');
+    }
+    33% {
+      background-image: url('images/download (8).jpeg.jpg');
+    }
+    66% {
+      background-image: url('images/download (8).jpeg.jpg');
+    }
+    100% {
+      background-image: url('images/OIP (12).jpeg.jpg');
+    }
+  }
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /* To ensure the nav is placed over the background */
+    top: 0; /* Align nav at the top */
+    width: 93%
+}
+nav img{
+    width: 150px; /* Adjust the size of the logo */
+    height: auto; 
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    
+    display: inline-block;
+    padding: 8px 12px;
+    
+}
+.nav-links ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3 ease, text-decoration 0.3ease;
+}
+.nav-links ul li a:hover {
+    color: #e6e0df; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
